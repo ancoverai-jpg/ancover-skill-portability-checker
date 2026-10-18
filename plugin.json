@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ancover-skill-portability-checker",
+  "version": "0.1.0",
+  "description": "Evidence-led skill portability checks for maintainers. Experimental; host execution coverage is reported separately.",
+  "author": {
+    "name": "Ancover"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/ancoverai-jpg/ancover-skill-portability-checker",
+  "homepage": "https://github.com/ancoverai-jpg/ancover-skill-portability-checker"
+}

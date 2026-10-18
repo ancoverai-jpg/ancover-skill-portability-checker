@@ -1,0 +1,3 @@
+# Contributing
+
+Explain a reproducible problem and the rule or workflow it affects. Keep portability rules separate from host-specific observations. Add a regression fixture for behavioral changes, run `pnpm install --frozen-lockfile --ignore-scripts`, `node --test tests/*.test.mjs` and the checker on this repository. Report your OS, Node version, commands and unavailable host coverage. Do not submit credentials or proprietary packages. New heuristics need documented false positives and limitations. Keep the canonical Skills and all manifest versions consistent. Prefer focused PRs; no fabricated evidence or badges. Maintainers triage correctness and security before adding new products.
