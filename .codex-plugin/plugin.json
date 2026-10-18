@@ -1,0 +1,6 @@
+{
+  "name": "ancover-skill-portability-checker",
+  "version": "0.1.0",
+  "description": "Evidence-led skill portability checks for maintainers.",
+  "skills": "./skills/"
+}
