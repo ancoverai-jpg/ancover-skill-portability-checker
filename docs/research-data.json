@@ -1,0 +1,276 @@
+{
+  "retrieved": "2026-10-18T01:16:14.427Z",
+  "method": "Unauthenticated public GitHub REST search; reports are allegations, not reproduced defects; closed reports are historical evidence.",
+  "results": [
+    {
+      "niche": "dx",
+      "query": "repo:astral-sh/uv is:issue installation windows",
+      "items": [
+        {
+          "url": "https://github.com/astral-sh/uv/issues/22649",
+          "title": "`uv python install` does not repair a managed installation whose interpreter executable is missing",
+          "created": "2026-10-16T17:14:06Z",
+          "updated": "2026-10-16T17:53:53Z",
+          "state": "open",
+          "author": "alex-feel"
+        },
+        {
+          "url": "https://github.com/astral-sh/uv/issues/12906",
+          "title": "uv installs x86_64 Python on arm64 Windows ",
+          "created": "2025-04-15T20:45:32Z",
+          "updated": "2026-10-16T17:11:45Z",
+          "state": "closed",
+          "author": "burgholzer"
+        },
+        {
+          "url": "https://github.com/astral-sh/uv/issues/21477",
+          "title": "Windows: uv pip install --overrides fails when requirements file path contains spaces",
+          "created": "2026-09-04T22:31:14Z",
+          "updated": "2026-10-16T17:06:33Z",
+          "state": "closed",
+          "author": "damonlynch"
+        },
+        {
+          "url": "https://github.com/astral-sh/uv/issues/12238",
+          "title": "Having tool.uv.sources to use a \"find-links\" directive instead of direct indexes or urls",
+          "created": "2025-03-17T11:52:13Z",
+          "updated": "2026-10-14T12:17:40Z",
+          "state": "closed",
+          "author": "jackmedda"
+        }
+      ]
+    },
+    {
+      "niche": "testing",
+      "query": "repo:microsoft/playwright is:issue flaky CI",
+      "items": [
+        {
+          "url": "https://github.com/microsoft/playwright/issues/35592",
+          "title": "[Feature]: Playwright's JUnit XML reporter annotate flaky tests.",
+          "created": "2025-04-13T08:43:12Z",
+          "updated": "2026-10-16T22:11:02Z",
+          "state": "closed",
+          "author": "avinashpoptani"
+        },
+        {
+          "url": "https://github.com/microsoft/playwright/issues/42862",
+          "title": "[Regression 1.62.1 → 1.63.0]: page Response.body() returns empty after in-page fetch().blob() already consumed it",
+          "created": "2026-09-22T16:17:28Z",
+          "updated": "2026-10-15T13:26:42Z",
+          "state": "open",
+          "author": "rusackas"
+        },
+        {
+          "url": "https://github.com/microsoft/playwright/issues/42698",
+          "title": "[Bug]: APIRequestContext ignores the server's Keep-Alive timeout, producing ECONNRESET on socket reuse",
+          "created": "2026-09-13T00:33:52Z",
+          "updated": "2026-10-13T02:48:16Z",
+          "state": "closed",
+          "author": "nick-vogel"
+        },
+        {
+          "url": "https://github.com/microsoft/playwright/issues/42702",
+          "title": "[Feature]: Failures-only terminal reporter (suppress passing test output)",
+          "created": "2026-09-13T20:45:39Z",
+          "updated": "2026-10-08T18:09:55Z",
+          "state": "closed",
+          "author": "rynz"
+        }
+      ]
+    },
+    {
+      "niche": "security",
+      "query": "repo:ossf/scorecard is:issue false positive",
+      "items": [
+        {
+          "url": "https://github.com/ossf/scorecard/issues/5315",
+          "title": "Enhancement of maintained check to better indicate abandoned repositories",
+          "created": "2026-10-12T14:58:45Z",
+          "updated": "2026-10-15T10:17:34Z",
+          "state": "open",
+          "author": "FelixOliverLange"
+        },
+        {
+          "url": "https://github.com/ossf/scorecard/issues/5232",
+          "title": "Feature - Pinned-Dependencies support self-repository GitHub actions syntax",
+          "created": "2026-09-10T11:53:52Z",
+          "updated": "2026-09-28T18:16:08Z",
+          "state": "closed",
+          "author": "Kielek"
+        },
+        {
+          "url": "https://github.com/ossf/scorecard/issues/5168",
+          "title": "Feature: Packaging check should detect winget publishing workflows",
+          "created": "2026-08-09T17:26:53Z",
+          "updated": "2026-09-24T08:08:05Z",
+          "state": "open",
+          "author": "mangokingTW"
+        },
+        {
+          "url": "https://github.com/ossf/scorecard/issues/5090",
+          "title": "GitHub Actions dependencies reported as \"unknown license\" despite having valid MIT licenses",
+          "created": "2026-06-07T14:10:22Z",
+          "updated": "2026-09-11T23:15:22Z",
+          "state": "open",
+          "author": "iemejia"
+        }
+      ]
+    },
+    {
+      "niche": "devops",
+      "query": "repo:docker/compose is:issue environment variable",
+      "items": [
+        {
+          "url": "https://github.com/docker/compose/issues/14356",
+          "title": "[FEATURE] Declare sensitive variables and redact config output by default",
+          "created": "2026-10-17T14:50:31Z",
+          "updated": "2026-10-17T14:51:06Z",
+          "state": "open",
+          "author": "savinmikhail"
+        },
+        {
+          "url": "https://github.com/docker/compose/issues/14287",
+          "title": "[BUG] pre_start no longer inherits its parent environment",
+          "created": "2026-10-06T11:33:59Z",
+          "updated": "2026-10-12T16:15:17Z",
+          "state": "closed",
+          "author": "JoaoLockem"
+        },
+        {
+          "url": "https://github.com/docker/compose/issues/13719",
+          "title": "allow optional env_file for include top level",
+          "created": "2026-04-07T15:10:03Z",
+          "updated": "2026-10-07T16:17:14Z",
+          "state": "open",
+          "author": "Dialgatrainer02"
+        },
+        {
+          "url": "https://github.com/docker/compose/issues/11122",
+          "title": "Add .env file support to COMPOSE_ENV_FILES",
+          "created": "2023-10-23T14:52:33Z",
+          "updated": "2026-10-02T09:45:57Z",
+          "state": "closed",
+          "author": "nickjj"
+        }
+      ]
+    },
+    {
+      "niche": "data",
+      "error": "HTTP 422"
+    },
+    {
+      "niche": "apis",
+      "query": "repo:modelcontextprotocol/servers is:issue authentication",
+      "items": [
+        {
+          "url": "https://github.com/modelcontextprotocol/servers/issues/3662",
+          "title": "Security Advisory: SSRF, Indirect Prompt Injection, and sandbox bypass in @modelcontextprotocol/server-puppeteer",
+          "created": "2026-03-21T08:20:47Z",
+          "updated": "2026-10-17T09:19:14Z",
+          "state": "closed",
+          "author": "joergmichno"
+        },
+        {
+          "url": "https://github.com/modelcontextprotocol/servers/issues/3635",
+          "title": "🚨 Security Warning for MCP Server Developers and Users: Systematic Forking as a Supply-Chain Attack Vector",
+          "created": "2026-03-18T16:45:06Z",
+          "updated": "2026-10-17T09:18:28Z",
+          "state": "closed",
+          "author": "CSCSoftware"
+        },
+        {
+          "url": "https://github.com/modelcontextprotocol/servers/issues/4882",
+          "title": "server-everything: get-env returns the full process environment to the client (credential exposure)",
+          "created": "2026-09-27T22:15:37Z",
+          "updated": "2026-09-28T18:38:19Z",
+          "state": "open",
+          "author": "CieveMe"
+        },
+        {
+          "url": "https://github.com/modelcontextprotocol/servers/issues/3752",
+          "title": "Security: filesystem server path parameters lack traversal constraints enabling prompt injection → arbitrary file read/write",
+          "created": "2026-03-30T00:03:26Z",
+          "updated": "2026-08-24T13:25:23Z",
+          "state": "open",
+          "author": "stevenkozeniesky02"
+        }
+      ]
+    },
+    {
+      "niche": "documentation",
+      "query": "repo:mkdocs/mkdocs is:issue broken links",
+      "items": [
+        {
+          "url": "https://github.com/mkdocs/mkdocs/issues/2876",
+          "title": "Enable users to change log level",
+          "created": "2022-07-01T12:18:12Z",
+          "updated": "2026-03-09T23:27:33Z",
+          "state": "closed",
+          "author": "AngryMane"
+        },
+        {
+          "url": "https://github.com/mkdocs/mkdocs/issues/3589",
+          "title": "False positive `relative_to_docs` absolute path validation warning",
+          "created": "2024-03-05T03:04:26Z",
+          "updated": "2026-03-09T23:27:26Z",
+          "state": "closed",
+          "author": "Blacksmoke16"
+        },
+        {
+          "url": "https://github.com/mkdocs/mkdocs/issues/3357",
+          "title": "Header and navigation sidebars display incorrectly arbitrary markup",
+          "created": "2023-08-28T07:53:11Z",
+          "updated": "2026-03-09T23:27:26Z",
+          "state": "closed",
+          "author": "Enn83"
+        },
+        {
+          "url": "https://github.com/mkdocs/mkdocs/issues/3428",
+          "title": "Adding the same page multiple times results in strange navigation",
+          "created": "2023-10-16T12:41:09Z",
+          "updated": "2026-03-09T23:27:16Z",
+          "state": "closed",
+          "author": "johnthagen"
+        }
+      ]
+    },
+    {
+      "niche": "agents",
+      "query": "repo:openai/codex is:issue skills invalid",
+      "items": [
+        {
+          "url": "https://github.com/openai/codex/issues/30408",
+          "title": "MCP server processes leak: per-thread processes never cleaned up (9+ GB RSS)",
+          "created": "2026-06-28T03:40:13Z",
+          "updated": "2026-10-17T23:32:25Z",
+          "state": "open",
+          "author": "kkkayye"
+        },
+        {
+          "url": "https://github.com/openai/codex/issues/49458",
+          "title": "[Windows] dot-started local tasks lack Computer Use tools while ordinary local Codex sessions work",
+          "created": "2026-09-30T03:09:53Z",
+          "updated": "2026-10-17T21:18:58Z",
+          "state": "open",
+          "author": "gaopengbin"
+        },
+        {
+          "url": "https://github.com/openai/codex/issues/38162",
+          "title": "ChatGPT Desktop: local MCP tools are discovered successfully but not exposed to Chat sessions",
+          "created": "2026-08-12T10:03:25Z",
+          "updated": "2026-10-17T19:20:41Z",
+          "state": "open",
+          "author": "brad8898"
+        },
+        {
+          "url": "https://github.com/openai/codex/issues/41608",
+          "title": "codex doctor reports rollout_db_parity warning for valid paginated rollouts",
+          "created": "2026-08-30T04:12:35Z",
+          "updated": "2026-10-17T19:18:18Z",
+          "state": "open",
+          "author": "Finley76"
+        }
+      ]
+    }
+  ]
+}

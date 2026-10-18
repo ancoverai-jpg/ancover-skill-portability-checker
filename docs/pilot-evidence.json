@@ -1,0 +1,46 @@
+{
+  "retrieved": "2026-10-18T01:20:11.590Z",
+  "evidenceType": "PUBLIC_REPORT_NOT_REPRODUCED",
+  "reports": [
+    {
+      "repo": "openai/codex",
+      "id": 25996,
+      "url": "https://github.com/openai/codex/issues/25996",
+      "title": "Codex App skips loading curated plugin skills due to metadata validation limits",
+      "author": "Lesterffx",
+      "created": "2026-06-03T00:57:49Z",
+      "updated": "2026-06-03T10:31:18Z",
+      "state": "closed"
+    },
+    {
+      "repo": "googleworkspace/cli",
+      "id": 521,
+      "url": "https://github.com/googleworkspace/cli/issues/521",
+      "title": "SKILL.md frontmatter uses flow sequences which fail `agentskills validate`",
+      "author": "ytausch",
+      "created": "2026-03-17T17:34:07Z",
+      "updated": "2026-03-23T20:31:59Z",
+      "state": "closed"
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "id": 80631,
+      "url": "https://github.com/anthropics/claude-code/issues/80631",
+      "title": "Plugin skill with a namespaced frontmatter `name` gets the plugin prefix applied twice (2.1.216)",
+      "author": "cameronsjo",
+      "created": "2026-07-23T17:05:05Z",
+      "updated": "2026-10-07T10:12:12Z",
+      "state": "open"
+    },
+    {
+      "repo": "agentskills/agentskills",
+      "id": 418,
+      "url": "https://github.com/agentskills/agentskills/issues/418",
+      "title": "Spec lacks guidance on skill verification and supply-chain trust",
+      "author": "theyavuzarslan",
+      "created": "2026-06-09T17:05:50Z",
+      "updated": "2026-06-30T16:48:23Z",
+      "state": "closed"
+    }
+  ]
+}
