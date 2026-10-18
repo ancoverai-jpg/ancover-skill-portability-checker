@@ -1,0 +1,8 @@
+import {mkdir,writeFile,rename} from 'node:fs/promises';import {resolve,dirname} from 'node:path';
+const queries={dx:'repo:astral-sh/uv is:issue installation windows',testing:'repo:microsoft/playwright is:issue flaky CI',security:'repo:ossf/scorecard is:issue false positive',devops:'repo:docker/compose is:issue environment variable',data:'is:issue "migration drift"',apis:'repo:modelcontextprotocol/servers is:issue authentication',documentation:'repo:mkdocs/mkdocs is:issue broken links',agents:'repo:openai/codex is:issue skills invalid'};
+const target=resolve(process.argv[2]||'.runtime/discovery.json'),results=[];
+for(const [niche,q] of Object.entries(queries)){
+ try{const r=await fetch('https://api.github.com/search/issues?q='+encodeURIComponent(q)+'&sort=updated&order=desc&per_page=4',{signal:AbortSignal.timeout(15000)});if(!r.ok)throw Error('HTTP_'+r.status);const body=await r.json();results.push({niche,query:q,items:body.items.filter(x=>!x.pull_request).map(x=>({url:x.html_url,title:x.title,author:x.user.login,created:x.created_at,updated:x.updated_at,state:x.state}))});}
+ catch(e){results.push({niche,error:/^HTTP_\d+$/.test(e.message)?e.message:'FETCH_FAILED'});}
+}
+await mkdir(dirname(target),{recursive:true});const temp=target+'.tmp';await writeFile(temp,JSON.stringify({retrieved:new Date().toISOString(),evidence:'UNREVIEWED_PUBLIC_REPORTS',results},null,2));await rename(temp,target);console.log(JSON.stringify({completed:results.filter(x=>!x.error).length,failed:results.filter(x=>x.error).length,notice:'Review relevance, independence, current fixes and alternatives before qualification.'}));
