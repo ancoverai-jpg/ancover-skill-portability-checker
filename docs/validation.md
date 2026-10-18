@@ -20,10 +20,10 @@ Environment: Windows, PowerShell 7.6, Node v24.19.0, pnpm 11.25.0, Codex CLI 0.1
 |Codex update path|Modified isolated package to 0.1.1, reinstalled, confirmed two Skill directories, removed; installed list empty|Real host CLI reinstall lifecycle; not app auto-update|
 |Codex conversation|Explicit and automatic positive/negative trigger evaluation pending|NOT_TESTED|
 |Claude Code|Executable absent; documented procedure supplied|NOT_TESTED|
-|CI|Workflow defined for Windows and Ubuntu; no remote runs yet|Configuration only; Linux and Node 22 matrix NOT_TESTED|
+|CI|Windows and Ubuntu jobs passed with Node 22, frozen dependency installation, 11 tests and self-inspection on commit d6d2534d3319844ed79830407ce0fbede77c6c17|Real GitHub Actions execution; run 39087680324|
 |Ancover App plugin|Updated to 1.0.2; read-back confirmed daily research target, preserving identity, App connection and presentation|Real saved release plus source verification; new-session host behavior NOT_TESTED|
 |Ancover discovery tools|list_plugins and search_public_capabilities returned -32603 Internal error|Observed failed calls; no runtime trust claim|
-|Public GitHub|Authenticated browser created ancoverai-jpg/ancover-skill-portability-checker; connector confirmed public visibility and push/admin permissions|Repository created; source commit and CI must be verified separately|
+|Public GitHub|Public repository created; 33 source files in commit d6d2534d3319844ed79830407ce0fbede77c6c17 matched local bytes through an unauthenticated Git clone|Actual source publication, verified separately from experimental host coverage|
 |Daily recurrence|Existing heartbeat updated ACTIVE to 09:00, 12:00, 15:00, 18:00 and 21:00; local schedule record inspected|Actual scheduler configuration, future execution NOT_TESTED|
 
 Commands: `pnpm install --frozen-lockfile --ignore-scripts`; `node --test tests/*.test.mjs`; `node skills/skill-preflight/scripts/check.mjs .`; `pnpm audit --prod`; `node scripts/discover.mjs .runtime/discovery-latest.json`; `node scripts/program.mjs cycle`. Discovery collector completed all eight queries in the final smoke run; these results are unreviewed leads and do not automatically qualify candidates.
