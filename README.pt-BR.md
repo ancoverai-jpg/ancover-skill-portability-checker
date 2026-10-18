@@ -7,6 +7,8 @@ O piloto **Skill Preflight** inspeciona um pacote local, identifica problemas de
 Requisitos: Node.js 22+ e pnpm 11.25.0. Na raiz deste projeto:
 
 ```sh
+git clone https://github.com/ancoverai-jpg/ancover-skill-portability-checker.git
+cd ancover-skill-portability-checker
 pnpm install --frozen-lockfile --ignore-scripts
 node --test tests/*.test.mjs
 node skills/skill-preflight/scripts/check.mjs .

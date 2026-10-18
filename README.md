@@ -2,6 +2,8 @@
 
 Experimental tools for maintainers distributing agent Skills across Codex and Claude Code.
 
+[![Validation](https://github.com/ancoverai-jpg/ancover-skill-portability-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/ancoverai-jpg/ancover-skill-portability-checker/actions/workflows/ci.yml)
+
 The first pilot, **Skill Preflight**, reads a local package and reports a deliberately small set of portability and hygiene findings. Its tree digest lets reviewers identify the content inspected. It does not certify safety, execute target code or establish host compatibility.
 
 [Português do Brasil](README.pt-BR.md) · [Research and ranking](docs/research.md) · [Specifications](docs/specifications.md) · [Operations](docs/operations.md) · [Validation](docs/validation.md)
@@ -11,6 +13,8 @@ The first pilot, **Skill Preflight**, reads a local package and reports a delibe
 Requires Node.js 22+ and pnpm 11.25.0. Download or clone this source, open its root, and run:
 
 ```sh
+git clone https://github.com/ancoverai-jpg/ancover-skill-portability-checker.git
+cd ancover-skill-portability-checker
 pnpm install --frozen-lockfile --ignore-scripts
 node --test tests/*.test.mjs
 node skills/skill-preflight/scripts/check.mjs .
