@@ -41,3 +41,7 @@ For a temporary Claude Code development session, the documented upstream path is
 Checked: required metadata, ASCII kebab-case profile, manifest identity/version drift, inline Markdown local files, symlinks, private-looking filenames, file count/size bounds and content digests. Unchecked: full host schemas, remote links, heading anchors, embedded secrets, script behavior, prompt injection, signatures and publisher identity. Dependency/Git/runtime directories are excluded from the digest. Inspect a stable, trusted filesystem snapshot; this is not a sandbox against concurrently changing files.
 
 No telemetry or remote upload. Do not submit sensitive package paths in public reports. YAML is the sole runtime dependency; see the lockfile and [security policy](SECURITY.md). Read [contribution guidance](CONTRIBUTING.md), [roadmap](ROADMAP.md) and [changelog](CHANGELOG.md). MIT licensed. No copied REA code or assets.
+
+## CI Check Evidence — experimental
+
+The [ci-check-evidence Skill](skills/ci-check-evidence/SKILL.md) reviews an explicit expected-check policy against an operator-supplied, single-revision snapshot. It flags missing contexts, unapproved skips, revision mismatches and ambiguous app/context identities. It does not run tests, read rulesets or approve merges. See [documentation and coverage](docs/ci-check-evidence/README.md).
