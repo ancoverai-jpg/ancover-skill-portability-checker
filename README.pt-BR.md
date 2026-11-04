@@ -22,3 +22,7 @@ O mesmo diretório `skills/` atende aos manifestos portátil, Codex e Claude Cod
 Consulte [pesquisa e ranking](docs/research.md), [três especificações](docs/specifications.md), [matriz de qualidade](docs/quality-matrix.md) e [diagnóstico](docs/environment.md). A meta solicitada é de pelo menos cinco projetos ou Skills novos publicados por dia, com cinco janelas diárias de trabalho. Os critérios de qualidade continuam obrigatórios; a contagem considera somente publicações efetivas no GitHub. A recorrência depende do agendador Codex e de suas condições de execução, documentadas no guia.
 
 Limites: não detecta todos os segredos embutidos, prompt injection ou comportamento malicioso; não valida todos os schemas de cada host. Não use o hash como assinatura. Licença MIT; veja [contribuição](CONTRIBUTING.md), [segurança](SECURITY.md) e [roadmap](ROADMAP.md).
+
+## Evidência de CI — experimental
+
+A nova [Skill ci-check-evidence](skills/ci-check-evidence/SKILL.md) compara uma política explícita de checks esperados com um snapshot fornecido de uma revisão. Mantém ausências, skips não autorizados, ambiguidades e divergências de revisão visíveis. Não executa testes nem autoriza merge. Veja [documentação e cobertura](docs/ci-check-evidence/README.pt-BR.md).

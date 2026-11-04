@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "expectedSha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "observedSha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "complete": true,
+  "expected": [
+    {
+      "name": "build",
+      "appId": 15368,
+      "allowSkipped": false
+    },
+    {
+      "name": "integration",
+      "appId": 15368,
+      "allowSkipped": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "build",
+      "appId": 15368,
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}

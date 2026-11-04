@@ -7,3 +7,5 @@
 5. Work toward at least five new projects or Skills published per day, as requested by the user, after exact-file review, clean tests, confirmed destination and remote verification. Group related Skills; do not count duplicates or bypass quality gates.
 
 No dates or adoption metrics are promised. Usage is not collected. Public issues, external contributions and consented user feedback will be measured once repositories exist.
+
+Experimental CI evidence scope: collect feedback on expected app/context policies before adding legacy commit-status APIs, automatic policy discovery or remediation. No claims of branch-protection equivalence.

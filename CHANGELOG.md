@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 — experimental candidate, 2026-11-04
+
+Adds the ci-check-evidence Skill and offline expected-context evaluator, 13 focused tests, synthetic example and EN/PT-BR documentation. Existing dependency versions and lockfile are unchanged. Local CLI and isolated Codex lifecycle are tested; conversational triggering and Claude Code runtime are NOT_TESTED. Remote CI/release evidence must be checked separately. This version change is not a new project count; only the new Skill path is eligible after publication gates.
+
 ## 0.1.0 — 2026-10-17
 
 Initial experimental Skill preflight, portfolio research workflow, deterministic program ledger, tests, documentation and CI definition. Host runtime coverage and publication status are recorded in the validation report. No production certification.
