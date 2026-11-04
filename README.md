@@ -45,3 +45,9 @@ No telemetry or remote upload. Do not submit sensitive package paths in public r
 ## CI Check Evidence — experimental
 
 The [ci-check-evidence Skill](skills/ci-check-evidence/SKILL.md) reviews an explicit expected-check policy against an operator-supplied, single-revision snapshot. It flags missing contexts, unapproved skips, revision mismatches and ambiguous app/context identities. It does not run tests, read rulesets or approve merges. See [documentation and coverage](docs/ci-check-evidence/README.md).
+
+## Source Archive Review — experimental
+
+[Source Archive Review](skills/source-archive-review/SKILL.md) inspects a selected ZIP against explicit expected files/prefixes and flags strict small Git LFS pointers, without extraction. Requires Python3.10+; no pip packages. See [EN documentation](docs/source-archive-review/README.md) and [Português](docs/source-archive-review/README.pt-BR.md). It does not establish a successful build, full payload integrity or provenance.
+
+Run the Python profile tests separately with: python -B -m unittest discover -s tests -p "*_test.py".

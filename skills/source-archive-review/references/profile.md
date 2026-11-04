@@ -1,0 +1,10 @@
+# ZIP review profile
+Python3.10+ standard library. Explicit manifest and ZIP regular files; symlink input paths rejected when inspected. No hostile-filesystem race guarantees.
+Manifest: UTF8 JSON <=1MiB, strict/unique fields:
+schemaVersion:1; sourceRevision:40 lowercase hex (operator assertion); rootPrefix:"" or relative directory ending "/"; requiredFiles:[relative file names]; requiredPrefixes:[relative directories ending "/"]. Combined1-100 expectations; duplicate items invalid. A nonempty prefix means at least one regular entry under it, not all submodule source. Choose actual required files to review stronger coverage.
+ZIP: <=16MiB, <=10000 members, <=256MiB declared uncompressed total, stored/deflated entries only. Other compression/encryption or malformed input fails with exit2. Member names reject controls, absolute paths, colon, backslash, empty/dot/traversal components. Duplicate entries, case collisions and symlink metadata produce findings. This is a narrow review profile, not a complete extraction security audit.
+Small regular entries <=1024 bytes are read to match only an exact three-line Git LFS v1 pointer (CRLF tolerated). Extension-bearing, noncanonical or larger pointers may be missed; deliberate fixtures produce findings too. Large members and their CRCs are not scanned. The artifact SHA256 identifies the selected ZIP bytes, not its author or a trusted build.
+Exit0: supplied configured checks satisfied. Exit1: findings. Exit2: malformed, unsupported or inaccessible input, with fixed JSON error. Output includes approved member names and artifact digest, never source bytes, pointer OIDs or input paths.
+Demo generator is separate and intentionally creates files in a NEW output directory; the review helper performs no target writes.
+
+Windows long installed paths: Python may fail to open an otherwise installed helper beyond the usual path limit. Use the extended-length absolute script path prefix \\?\ when required, or an explicitly selected shorter installation location. Do not change global Windows policies. The local lifecycle was tested using the extended-length prefix.

@@ -26,3 +26,9 @@ Limites: não detecta todos os segredos embutidos, prompt injection ou comportam
 ## Evidência de CI — experimental
 
 A nova [Skill ci-check-evidence](skills/ci-check-evidence/SKILL.md) compara uma política explícita de checks esperados com um snapshot fornecido de uma revisão. Mantém ausências, skips não autorizados, ambiguidades e divergências de revisão visíveis. Não executa testes nem autoriza merge. Veja [documentação e cobertura](docs/ci-check-evidence/README.pt-BR.md).
+
+## Source Archive Review — experimental
+
+A [Skill Source Archive Review](skills/source-archive-review/SKILL.md) compara um ZIP selecionado com arquivos e prefixos esperados, sinalizando ponteiros LFS canônicos sem extrair o conteúdo. Requer Python3.10+; não usa pacotes pip. Veja a [documentação em português](docs/source-archive-review/README.pt-BR.md). O resultado não comprova compilação, integridade de todos os arquivos ou proveniência.
+
+Teste Python: python -B -m unittest discover -s tests -p "*_test.py". Os testes Node continuam sendo executados separadamente pelo comando habitual.
