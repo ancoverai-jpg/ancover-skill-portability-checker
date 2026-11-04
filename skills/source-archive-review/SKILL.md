@@ -8,7 +8,7 @@ Use for a maintainer checking the actual source ZIP offered to users without a G
 
 Pin the intended revision and identify build prerequisites from that revision's source/build configuration. Gitlinks can establish submodule paths; do not infer a complete submodule from .gitmodules or one nonempty directory. Record authoritative representative required files when possible. Manifest paths and sourceRevision remain operator assertions, not cryptographic provenance.
 
-Read [the profile and contract](references/profile.md). Supply an explicit rootPrefix matching the selected artifact; do not guess or silently strip archive roots. Run:
+Resolve the helper from this installed Skill directory, never from the archive or a reviewed project's own scripts. The command example assumes a trusted source checkout of this package. Read [the profile and contract](references/profile.md). Supply an explicit rootPrefix matching the selected artifact; do not guess or silently strip archive roots. Run:
 ```sh
 python -B skills/source-archive-review/scripts/check.py EXPECTATIONS.json SOURCE.zip
 ```
