@@ -55,3 +55,7 @@ Run the Python profile tests separately with: python -B -m unittest discover -s 
 ## MCP Structured Result Check — experimental
 
 [MCP Structured Result Check](skills/mcp-structured-result-check/SKILL.md) compares one recorded legacy MCP structuredContent object with its selected outputSchema. It distinguishes mismatches, tool-reported errors and unsupported validation, suppressing payload data in its report. Requires Python3.12+ and the isolated pinned requirements. [EN documentation](docs/mcp-structured-result-check/README.md) · [Português](docs/mcp-structured-result-check/README.pt-BR.md). No live transport, successful real tool execution or modern protocol compatibility is inferred.
+
+## MCP Tool Catalog Diff — experimental
+
+[MCP Tool Catalog Diff](skills/mcp-tool-catalog-diff/SKILL.md) compares two complete selected catalogs and flags added/removed declarations or same-name schema, description, annotation and metadata changes. Python3.12+ stdlib; no new dependencies, connections or approval changes. [EN usage](docs/mcp-tool-catalog-diff/README.md) · [Português](docs/mcp-tool-catalog-diff/README.pt-BR.md). Equality is a bounded selected-data result, not semantic compatibility or authenticated server identity.

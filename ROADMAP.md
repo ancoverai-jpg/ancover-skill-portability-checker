@@ -13,3 +13,5 @@ Experimental CI evidence scope: collect feedback on expected app/context policie
 Source archive review: keep ZIP limits and operator expectations explicit; evaluate actual prerequisite policies before TAR support or automation. No LFS hydration or automatic archive-setting changes.
 
 MCP structured result review: obtain consented real integration feedback and compare with Inspector/SDK diagnostics before expanding beyond the pinned legacy profile. Format assertions and modern protocol support require separate specifications and tests.
+
+MCP catalog comparison: evaluate private paired captures with consented maintainers and compare utility with Inspector/RugSnare before adding any semantic classifiers or automatic capture. A changed declaration is a review item, not an attack verdict; unchanged declarations cannot establish behavior stability.
