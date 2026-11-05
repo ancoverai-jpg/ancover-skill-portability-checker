@@ -1,0 +1,19 @@
+# Demand and alternatives — retrieved 2026-11-04
+Three independently authored reports in three project communities (all hosted on GitHub; communities mean distinct projects, not distinct websites). No crossposts counted; no outreach or demand volumes inferred.
+
+|Community / author / date|Firsthand reported problem and current evidence|Scope supported|
+|---|---|---|
+|[IBM ContextForge #4042](https://github.com/IBM/mcp-context-forge/issues/4042), btbinaryjanitor,2026-04-03|Reports upstream structuredContent lost through gateway and missing-output error; closed not planned at retrieval. Historical user report, cause not independently reproduced.|Compare selected direct/proxied payloads without assuming upstream bug remains.|
+|[Claude Code #76257](https://github.com/anthropics/claude-code/issues/76257), niino-atsuko,2026-07-10|Reports whole CallToolResult apparently validated rather than structuredContent; closed not planned/stale. Author's diagnosis, not an independently confirmed current defect.|Payload-versus-envelope regression fixture.|
+|[Shopware #17516](https://github.com/shopware/shopware/issues/17516), SpiGAndromeda,2026-06-16|Requests machine-checkable MCP output contracts. Oct26 maintainer update says structuredContent shipped, outputSchema declaration/validation remains; issue open.|Need explicit schema/result pairing; original missing-structuredContent claim is partly superseded.|
+
+Confidence: moderate in recurring contract-diagnosis friction; low in adoption, willingness to use another helper, or prevalence. No metrics fabricated. Narrow proposed value: private offline diagnosis with fixed sanitized output and explicit unknowns. This does not fix any cited product.
+
+Current primary alternatives:
+- [Official MCP Inspector](https://modelcontextprotocol.io/docs/tools/inspector): live/reference client, tool inspection/calls and transport diagnosis. Preferred for live integration; supports modern protocol eras beyond this legacy helper.
+- [jsonschema](https://python-jsonschema.readthedocs.io/en/stable/validate/) already performs schema validation; this Skill uses its Draft202012Validator rather than inventing a validator. [Registry reference controls](https://python-jsonschema.readthedocs.io/en/stable/referencing/) disable URI retrieval.
+- Project SDK validators/integration tests: preferable for in-process enforcement and regression prevention. This helper adds neither server enforcement nor transport testing.
+
+[Legacy MCP tools specification](https://modelcontextprotocol.io/specification/2025-06-18/server/tools) separates structuredContent from content and describes outputSchema matching. Explicitly pinned rather than claiming this is the latest protocol. No issue text/code copied. Positive ranking: recurrent reports3/3, communities3, bounded implementation, low execution privilege. Risks: crowded alternatives, legacy scope and capture provenance remain unresolved. Publish experimental source only after actual helper/installation/CI gates.
+
+Editorial prioritization (1=low,5=high; judgment, not measured demand): pain3 (integration contracts), evidence3 (three distinct reports, two historical), gap2 (strong Inspector/SDK alternatives), demonstrable local value3 (sanitized selected-object diagnosis), adoption2 (no installation/usage data), Skill fit4 (repeatable triage instructions), enterprise use3 (proxy/API handoffs; hypothetical use), maintenance3 (pinned legacy scope plus six dependencies), Ancover fit4 (evidence-calibrated integration tooling). Estimated implementation/validation effort: one focused pilot plus host/CI checks; no commercial outcome estimate. Scope remains legacy because modern protocol contracts require separate study. Maintain test fixtures and review dependency advisories; prioritize any false-MATCH report before expansion.

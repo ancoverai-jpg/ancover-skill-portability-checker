@@ -30,7 +30,7 @@ Example output fields (run the command for actual values):
 
 ## Agent use
 
-One canonical `skills/` directory backs the portable root manifest and the Codex and Claude overlays. Invoke the bundled Skill and point it at the local target. Host checks and trigger tests are documented separately in the validation report. The `portfolio-research` Skill guides daily research and maintenance toward the user-requested target of at least five new projects or Skills actually published per day, with unchanged evidence and quality gates.
+One canonical `skills/` directory backs the portable root manifest and the Codex and Claude overlays. Invoke the bundled Skill and point it at the local target. Host checks and trigger tests are documented separately in the validation report. The `portfolio-research` Skill guides daily research and maintenance toward the user-requested target of three new projects or Skills actually published per day, using only the 12:00, 18:00 and 21:00 São Paulo windows; after three, maintain/prepare without new publication, with unchanged evidence and quality gates.
 
 For a temporary Claude Code development session, the documented upstream path is `claude --plugin-dir /absolute/path/to/ancover-open-source`. This host is unavailable here; validate with `claude plugin validate` and test real invocation before claiming compatibility. Codex installation procedures and their observed results are recorded in the operations guide.
 
@@ -40,7 +40,7 @@ For a temporary Claude Code development session, the documented upstream path is
 
 Checked: required metadata, ASCII kebab-case profile, manifest identity/version drift, inline Markdown local files, symlinks, private-looking filenames, file count/size bounds and content digests. Unchecked: full host schemas, remote links, heading anchors, embedded secrets, script behavior, prompt injection, signatures and publisher identity. Dependency/Git/runtime directories are excluded from the digest. Inspect a stable, trusted filesystem snapshot; this is not a sandbox against concurrently changing files.
 
-No telemetry or remote upload. Do not submit sensitive package paths in public reports. YAML is the sole runtime dependency; see the lockfile and [security policy](SECURITY.md). Read [contribution guidance](CONTRIBUTING.md), [roadmap](ROADMAP.md) and [changelog](CHANGELOG.md). MIT licensed. No copied REA code or assets.
+No telemetry or remote upload. Do not submit sensitive package paths in public reports. YAML is the Node checker dependency; the optional MCP helper has six pinned Python dependencies installed separately; see the lockfile and [security policy](SECURITY.md). Read [contribution guidance](CONTRIBUTING.md), [roadmap](ROADMAP.md) and [changelog](CHANGELOG.md). MIT licensed. No copied REA code or assets.
 
 ## CI Check Evidence — experimental
 
@@ -51,3 +51,7 @@ The [ci-check-evidence Skill](skills/ci-check-evidence/SKILL.md) reviews an expl
 [Source Archive Review](skills/source-archive-review/SKILL.md) inspects a selected ZIP against explicit expected files/prefixes and flags strict small Git LFS pointers, without extraction. Requires Python3.10+; no pip packages. See [EN documentation](docs/source-archive-review/README.md) and [Português](docs/source-archive-review/README.pt-BR.md). It does not establish a successful build, full payload integrity or provenance.
 
 Run the Python profile tests separately with: python -B -m unittest discover -s tests -p "*_test.py".
+
+## MCP Structured Result Check — experimental
+
+[MCP Structured Result Check](skills/mcp-structured-result-check/SKILL.md) compares one recorded legacy MCP structuredContent object with its selected outputSchema. It distinguishes mismatches, tool-reported errors and unsupported validation, suppressing payload data in its report. Requires Python3.12+ and the isolated pinned requirements. [EN documentation](docs/mcp-structured-result-check/README.md) · [Português](docs/mcp-structured-result-check/README.pt-BR.md). No live transport, successful real tool execution or modern protocol compatibility is inferred.

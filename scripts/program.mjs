@@ -2,7 +2,7 @@ import {mkdir,open,readFile,writeFile,rename,unlink} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 export const stages=['discovered','researched','prioritized','specified','developing','validating','ready','published','maintenance'];
-export const dailyPublicationTarget=5;
+export const dailyPublicationTarget=3;
 export function dailyProgress(state,now=new Date()){
  const localDay=date=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
  const day=localDay(now),published=state.publications.filter(p=>localDay(new Date(p.at))===day).length;
@@ -39,7 +39,7 @@ export async function main(args){
   if(cmd==='advance'){const [id,next,json]=rest;advance(state,id,next,JSON.parse(json));return {id,stage:next};}
   if(cmd==='cycle'){
    const pending=state.items.filter(x=>['maintenance','published','validating','developing'].includes(x.stage));
-   return {mode:'OPERATOR_HANDOFF',progress:dailyProgress(state),limits:{maxMinutes:45,maxAttempts:2,paidApiCalls:0},queue:pending.length?pending:state.items,notice:'Daily target is five distinct qualified projects or Skills actually published to GitHub. No weekly cap. No drafts, private plugin saves, version-only updates or duplicate publications count toward it. Quality gates remain mandatory.'};
+   return {mode:'OPERATOR_HANDOFF',progress:dailyProgress(state),limits:{maxMinutes:45,maxAttempts:2,paidApiCalls:0},queue:pending.length?pending:state.items,notice:'Daily target is three distinct qualified projects or Skills actually published to GitHub. Stop new publication at three and continue maintenance only unless the user changes the instruction. No weekly cap. No drafts, private plugin saves, version-only updates or duplicate publications count toward it. Quality gates remain mandatory.'};
   }if(cmd==='status')return state;throw Error('USAGE: program.mjs add|advance|cycle|status');
  });
 }

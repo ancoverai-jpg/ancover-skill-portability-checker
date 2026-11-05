@@ -17,6 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: python -m pip install --require-hashes --only-binary=:all: -r skills/mcp-structured-result-check/requirements.txt
       - run: python -B -m unittest discover -s tests -p '*_test.py'
       - run: corepack enable
       - run: corepack prepare pnpm@11.25.0 --activate

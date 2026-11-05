@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0 — experimental candidate, 2026-11-04
+
+Adds mcp-structured-result-check, a bounded offline legacy MCP structuredContent/outputSchema review with pinned Python wheels,16 focused tests and EN/PT-BR docs. No live MCP calls or full protocol certification. Conversational Codex/Claude coverage NOT_TESTED. Current operator policy is three new units/day at12h,18h,21h America/Sao_Paulo. Historical release records are preserved; this version bump is not another new unit.
+
 ## 0.3.0 — experimental candidate, 2026-11-04
 
 Adds source-archive-review: bounded non-extracting ZIP inspection, explicit prerequisite policy, small canonical LFS pointer findings, Python standard-library tests and EN/PT-BR docs. Existing Node dependencies and lockfile remain unchanged. One new Skill, not another project for the version bump. Host conversation/Claude runtime remain NOT_TESTED.
