@@ -1,0 +1,31 @@
+{
+  "profile": "mcp-2025-06-18-draft202012",
+  "tool": {
+    "name": "sample_count",
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "count"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "callResult": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"count\":2}"
+      }
+    ],
+    "structuredContent": {
+      "count": 2
+    },
+    "isError": false
+  }
+}
