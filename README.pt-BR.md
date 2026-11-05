@@ -38,3 +38,7 @@ Teste Python: python -B -m unittest discover -s tests -p "*_test.py". Os testes 
 A [Skill mcp-structured-result-check](skills/mcp-structured-result-check/SKILL.md) compara offline structuredContent com outputSchema de uma captura selecionada do MCP2025-06-18. Diferencia incompatibilidade, falha declarada e resultado indeterminado. Requer Python3.12+ e seis dependências fixadas em ambiente isolado. [Uso e limites em português](docs/mcp-structured-result-check/README.pt-BR.md). Não comprova execução real nem conformidade completa do protocolo.
 
 Política vigente em04/11/2026: três novas unidades por dia, somente nas janelas12h,18h e21h de São Paulo. Horários iniciam trabalho, sem promessa de publicação imediata. Após três, somente manutenção/preparação. O checker Node usa YAML; o helper MCP requer as dependênciasPython próprias.
+
+## Comparação de catálogos de ferramentas MCP — experimental
+
+A [Skill mcp-tool-catalog-diff](skills/mcp-tool-catalog-diff/SKILL.md) compara duas capturas completas e mostra inclusões, remoções e mudanças de declarações, mesmo mantendo os nomes. Usa Python3.12+ padrão, sem novas dependências, conexões ou alterações de aprovação. [Uso e limites](docs/mcp-tool-catalog-diff/README.pt-BR.md). Não prova segurança, compatibilidade semântica ou identidade autenticada.

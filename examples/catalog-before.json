@@ -1,0 +1,25 @@
+{
+  "profile": "ancover-mcp-tool-catalog-v1",
+  "serverKey": "synthetic-demo",
+  "complete": true,
+  "tools": [
+    {
+      "name": "read_demo",
+      "description": "Read the selected demo item.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "item": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "item"
+        ]
+      },
+      "annotations": {
+        "readOnlyHint": true
+      }
+    }
+  ]
+}
