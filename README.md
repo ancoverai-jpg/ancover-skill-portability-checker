@@ -59,3 +59,7 @@ Run the Python profile tests separately with: python -B -m unittest discover -s 
 ## MCP Tool Catalog Diff — experimental
 
 [MCP Tool Catalog Diff](skills/mcp-tool-catalog-diff/SKILL.md) compares two complete selected catalogs and flags added/removed declarations or same-name schema, description, annotation and metadata changes. Python3.12+ stdlib; no new dependencies, connections or approval changes. [EN usage](docs/mcp-tool-catalog-diff/README.md) · [Português](docs/mcp-tool-catalog-diff/README.pt-BR.md). Equality is a bounded selected-data result, not semantic compatibility or authenticated server identity.
+
+## Git Tracked Ignore Review
+
+This experimental Skill reports current index paths matching repository .gitignore rules. It uses Git and Python 3.12 standard library. The report contains a match count and a path-set digest. [Skill](skills/git-tracked-ignore-review/SKILL.md) · [EN](docs/git-tracked-ignore-review/README.md) · [PT-BR](docs/git-tracked-ignore-review/README.pt-BR.md)
