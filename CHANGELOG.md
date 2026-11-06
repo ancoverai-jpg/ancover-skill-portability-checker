@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.0 — experimental candidate, 2026-11-06
+
+Adds git-tracked-ignore-review for current index paths matching repository .gitignore rules. Includes a count and path-set digest, eight regressions using real Git indexes, and EN/PT-BR usage. Uses Python standard library and an existing Git installation. Codex conversation, Claude runtime, sparse checkout and standalone Skill installation are NOT_TESTED.
+
 ## 0.5.0 — experimental candidate, 2026-11-05
 
 Adds mcp-tool-catalog-diff: offline selected-catalog comparison, same-name declaration drift, privacy-conscious indices/digests,16 regression tests and EN/PT-BR documentation. Object/tool order ignored; arrays, unknown fields and exact number spelling retained. No new dependencies; existing lockfiles/CI dependency versions unchanged. Codex conversation and Claude runtime remain NOT_TESTED; no transport/security/compatibility certification. Only the distinct Skill path counts after publication gates, not the version or docs.

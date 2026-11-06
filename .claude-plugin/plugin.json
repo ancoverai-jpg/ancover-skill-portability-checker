@@ -1,6 +1,6 @@
 {
   "name": "ancover-skill-portability-checker",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Evidence-led skill portability checks for maintainers.",
   "author": {
     "name": "Ancover"

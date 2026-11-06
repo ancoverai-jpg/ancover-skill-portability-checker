@@ -15,3 +15,5 @@ Source archive review: keep ZIP limits and operator expectations explicit; evalu
 MCP structured result review: obtain consented real integration feedback and compare with Inspector/SDK diagnostics before expanding beyond the pinned legacy profile. Format assertions and modern protocol support require separate specifications and tests.
 
 MCP catalog comparison: evaluate private paired captures with consented maintainers and compare utility with Inspector/RugSnare before adding any semantic classifiers or automatic capture. A changed declaration is a review item, not an attack verdict; unchanged declarations cannot establish behavior stability.
+
+Git Tracked Ignore Review will gather maintainer feedback on the repository-rule profile. Sparse checkout coverage requires dedicated fixtures.

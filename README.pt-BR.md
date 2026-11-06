@@ -42,3 +42,7 @@ Política vigente em04/11/2026: três novas unidades por dia, somente nas janela
 ## Comparação de catálogos de ferramentas MCP — experimental
 
 A [Skill mcp-tool-catalog-diff](skills/mcp-tool-catalog-diff/SKILL.md) compara duas capturas completas e mostra inclusões, remoções e mudanças de declarações, mesmo mantendo os nomes. Usa Python3.12+ padrão, sem novas dependências, conexões ou alterações de aprovação. [Uso e limites](docs/mcp-tool-catalog-diff/README.pt-BR.md). Não prova segurança, compatibilidade semântica ou identidade autenticada.
+
+## Conferência de arquivos indexados que correspondem ao .gitignore
+
+Esta Skill experimental consulta o índice atual com Git e a biblioteca padrão do Python 3.12. O relatório apresenta a contagem e o digest do conjunto de caminhos. [Skill](skills/git-tracked-ignore-review/SKILL.md) · [Uso e escopo](docs/git-tracked-ignore-review/README.pt-BR.md)
